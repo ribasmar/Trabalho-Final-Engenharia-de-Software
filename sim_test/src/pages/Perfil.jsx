@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import todosProfessores from '../data/professores.json';
 import todasTurmas from '../data/turmas.json';
 import todosAvisos from '../data/avisos.json';
+import ImageModal from '../components/ImageModal'; // 1. Importe o modal
 
 // Importe todas as imagens. Crie um mapa para fácil acesso.
 import florestopolisImg from '../data/imgs/florestopolis.png';
@@ -25,6 +26,9 @@ function Perfil({ activeProfileId }) {
   const [turmas, setTurmas] = useState([]);
   const [avisos, setAvisos] = useState([]);
   const [turmaSelecionada, setTurmaSelecionada] = useState(null);
+  
+  // 2. Adicione o estado para controlar a imagem no modal
+  const [modalImageUrl, setModalImageUrl] = useState(null);
 
   // useEffect vai rodar sempre que o ID do perfil ativo mudar
   useEffect(() => {
@@ -40,6 +44,7 @@ function Perfil({ activeProfileId }) {
       setTurmas(turmasDoProfessor);
       setAvisos(avisosDoProfessor);
       setTurmaSelecionada(null); // Reseta a turma selecionada ao trocar de perfil
+      setModalImageUrl(null); // Garante que o modal feche ao trocar de perfil
     }
   }, [activeProfileId]); // Dependência: rode este efeito quando activeProfileId mudar
 
@@ -53,13 +58,19 @@ function Perfil({ activeProfileId }) {
     return <div>Carregando perfil...</div>;
   }
 
+  const fotoAtual = imagensDePerfil[professor.foto_perfil];
+
   return (
     <div className="perfil-container">
+      {/* 3. Adicione o componente do Modal aqui */}
+      <ImageModal imageUrl={modalImageUrl} onClose={() => setModalImageUrl(null)} />
+
       <div className="perfil-header">
         <img 
-          src={imagensDePerfil[professor.foto_perfil]} 
+          src={fotoAtual} 
           alt="Foto de Perfil" 
-          className="perfil-foto" 
+          className="perfil-foto clicavel" // Adicionada classe para estilo
+          onClick={() => setModalImageUrl(fotoAtual)} // 4. Evento de clique adicionado
         />
         <div className="perfil-info">
           <h1>{professor.nome}</h1>
@@ -81,7 +92,8 @@ function Perfil({ activeProfileId }) {
             <h3>Detalhes de: {turmaSelecionada.nome}</h3>
             <p><strong>Curso:</strong> {turmaSelecionada.curso}</p>
             <p><strong>Período:</strong> {turmaSelecionada.periodo}</p>
-            <p><strong>Alunos Matriculados:</strong> {turmaSelecionada.alunos}</p>
+            {/* O campo `alunos` não existe mais em `turmas.json`, substituído por `aluno_ids` */}
+            <p><strong>Alunos Matriculados:</strong> {turmaSelecionada.aluno_ids.length}</p>
           </div>
         )}
       </div>

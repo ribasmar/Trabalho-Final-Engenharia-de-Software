@@ -60,3 +60,13 @@
 .turma-detalhes h3 {
   color: #ffea00;
 }
+
+.perfil-foto.clicavel {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.perfil-foto.clicavel:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(100, 108, 255, 0.7);
+}
