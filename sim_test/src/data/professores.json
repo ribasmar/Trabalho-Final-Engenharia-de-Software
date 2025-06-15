@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "nome": "Florestópolis",
+    "email": "florestopolis@utfpr.professores.edu.br",
+    "foto_perfil": "florestopolis.png",
+    "turmas_ids": [101, 102]
+  },
+  {
+    "id": 2,
+    "nome": "Catatau",
+    "email": "catatau@utfpr.professores.edu.br",
+    "foto_perfil": "catatau.png",
+    "turmas_ids": [103]
+  },
+  {
+    "id": 3,
+    "nome": "L",
+    "email": "l@utfpr.professores.edu.br",
+    "foto_perfil": "l.png",
+    "turmas_ids": [104, 105]
+  }
+]

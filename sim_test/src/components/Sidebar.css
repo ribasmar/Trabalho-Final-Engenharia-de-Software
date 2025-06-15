@@ -1,0 +1,44 @@
+.sidebar {
+  width: 250px;
+  background-color: rgb(140, 30, 155);
+  color: white;
+  height: 100vh;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar-header {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+  color: rgba(255, 255, 255, 0.87);
+  text-decoration: none;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+  background-color: #ffea00;
+  color:rgb(225, 0, 255)
+}
+
+.sidebar ul li a.active {
+  background-color: #ffea00;
+  font-weight: bold;
+  color:rgb(225, 0, 255)
+}

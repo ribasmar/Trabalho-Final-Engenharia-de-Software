@@ -1,0 +1,26 @@
+.profile-selector-container {
+  padding: 10px 15px;
+  background-color: rgb(140, 30, 155);
+  border-top: 1px solid #ffea00;
+  border-bottom: 1px solid #ffea00;
+  margin-bottom: 20px;
+}
+
+.profile-selector-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #ffea00;
+}
+
+.profile-selector-container select {
+  width: 100%;
+  padding: 8px;
+  background-color: rgb(140, 30, 155);
+  color: white;
+  font-weight: bold;
+  border: 1px solid rgb(140, 30, 155);
+  border-radius: 4px;
+  font-size: 0.9em;
+}

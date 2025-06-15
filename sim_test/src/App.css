@@ -1,0 +1,16 @@
+/* src/App.css */
+
+.dashboard-layout {
+  display: flex; /* Coloca a Sidebar e o conteúdo lado a lado */
+  width: 100%;
+  height: 100%;
+  background-color: #1e1e1e; /* Cor de fundo para a área de conteúdo */
+}
+
+.main-content {
+  flex-grow: 1; /* Faz esta área ocupar todo o espaço restante */
+  padding: 2rem;
+  height: 100vh; /* Altura total da janela */
+  overflow-y: auto; /* Adiciona scroll se o conteúdo for maior que a tela */
+  box-sizing: border-box; /* Garante que o padding não aumente o tamanho total */
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "id": 301,
+    "turma_id": 101,
+    "disciplina": "Engenharia de Software",
+    "data": "2025-11-10",
+    "horario": "19:00",
+    "local": "Sala 302",
+    "conteudo": [
+      "Diagramas UML: Casos de Uso e Sequência",
+      "Padrões de Projeto: Singleton e Factory",
+      "Metodologias Ágeis: Scrum e Kanban"
+    ]
+  },
+  {
+    "id": 302,
+    "turma_id": 102,
+    "disciplina": "Banco de Dados",
+    "data": "2025-11-12",
+    "horario": "21:00",
+    "local": "Laboratório 5",
+    "conteudo": [
+      "Modelagem Relacional e Entidade-Relacionamento",
+      "Normalização de Dados (1FN, 2FN, 3FN)",
+      "Consultas SQL: JOINs e Subqueries"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "id": 101,
+    "nome": "Engenharia de Software - Turma A",
+    "curso": "Ciência da Computação",
+    "periodo": "6º Período",
+    "horarios": [{ "dia": "Segunda", "hora": "19:00 - 20:40" }, { "dia": "Quarta", "hora": "21:00 - 22:40" }],
+    "analise_geral": "turma-101-analise.png",
+    "aluno_ids": [201, 202, 205]
+  },
+  {
+    "id": 102,
+    "nome": "Banco de Dados - Turma C",
+    "curso": "Sistemas de Informação",
+    "periodo": "4º Período",
+    "horarios": [{ "dia": "Terça", "hora": "19:00 - 20:40" }, { "dia": "Quinta", "hora": "21:00 - 22:40" }],
+    "analise_geral": "turma-102-analise.png",
+    "aluno_ids": [203, 204, 205]
+  },
+  {
+    "id": 103,
+    "nome": "Inteligência Artificial - Turma Única",
+    "curso": "Ciência da Computação",
+    "periodo": "8º Período",
+    "horarios": [{ "dia": "Sexta", "hora": "19:00 - 22:40" }],
+    "analise_geral": "turma-103-analise.png",
+    "aluno_ids": [201, 203]
+  }
+]
